@@ -51,17 +51,17 @@ width: 50%;
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100px;
-    left:-10px;
+    top: 90px;
+    left:-260px;
     /* right: 0;
     z-index: 100; */
     background-color: white;
     box-shadow: 0px 4px 6px black;
-    padding: 15px;
+
     border-radius: 10px;
     text-align:center;
     transition: all 0.3s ease-in-out;
-    width: 100%;
+    width: 300px;
     font-size: 1.5rem;
 
       
@@ -461,7 +461,7 @@ li a{
     }
 
     .project-image{
-        max-width: 98%;
+        max-width: 100%;
     }
 }
 @media only screen and (max-width:1024px){
@@ -493,17 +493,19 @@ li a{
     flex-direction: column;
     /* text-align: center; */
 }
-/* .skills-img-container{
-     gap:20px;
-}
 
-.skils-img-container div {
-    width:80px;
+ /* .skills-img-container{
+     
+} */
+ .skils-img-container div {
+
+    flex:auto;
+    width:316px;
    
   
- }   */
-}
- /* .project-card-img,
+ }   
+
+ .project-card-img,
 .project-card-list {
     max-width: 100%
 } 
@@ -523,13 +525,13 @@ li a{
 }
  .contact-para{
     width: 100%;
- 
 
 
-}  */
+}  
+}
 
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:769px){
   
   
     .hero-container{
@@ -539,11 +541,31 @@ li a{
     .hero-text-container{
         max-width: 100%;
     }
+    .hamburger-icon{
+        width: 80px;
+        height: 90px;
+    }
+    .logo-img{
+        width: 40%;
+    }
  .social-icon {
     padding:10px;
  }
 
-   
+   .hero-section-heading,
+   .aboutme-heading,
+   .section-heading,
+   .project-main-heading,
+   .contact-heading {
+       font-size: 2.5rem;
+   }
+   .hero-section-para,
+   .aboutme-para-container,
+   .project-para,
+   .contact-para {
+       font-size: 1.2rem;
+
+   }
 
     .aboutme-card-container{
         flex-direction: column;
@@ -551,11 +573,12 @@ li a{
     }
        
    .skils-img-container div {
-        width:70px;
+      flex:none;
+        width:102px;
        
       
      }  
-          .project-card-img,
+    .project-card-img,
     .project-card-list {
         max-width: 100%
     } 
@@ -588,17 +611,26 @@ li a{
 .section-heading,
 .project-main-heading,
 .contact-heading{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .hero-section-para,
 .aboutme-para-container,
 .project-para,
 .contact-para{
-    font-size: 1.2rem;
+    font-size: 1rem;
 
 }
+ .hamburger-icon {
+     width: 50px;
+     height: 50px;
+ }
+
+ 
 .social-icon{
     padding: 10px;
+    margin: 7px;
+    width:30px;
+    height:30px;
 }
 /* .contact-text {
     width: 100%;
@@ -607,6 +639,13 @@ li a{
 
 
 } */
+ .social-links{
+    
+ }
+ .myskills-conatiner{
+ margin-top: -56px;
+}
+ 
  .project-heading{
     font-size:1.5rem;
  
@@ -629,19 +668,24 @@ li a{
     font-size: 1rem;
 }
 }
-@media only screen and (max-width:425px){
+@media only screen and (max-width:450px){
 .logo-img {
     width: 20%;
     }
     .hero-section-heading,
     .aboutme-heading,
+    
     .section-heading,
     .project-main-heading,
     .contact-heading{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
-    .hero-section-para,.aboutme-para-container,.project-para,.contact-para{
-        font-size: 1.1rem;
+    .hero-section-para,
+   
+    .project-para,
+    .contact-para,
+    .aboutme-para{
+        font-size: 14px;
 
     }
     .project-btn{
@@ -656,14 +700,21 @@ li a{
         width:100%;
     }
     .contact-para2{
-        font-size: 1.2rem;
+        font-size: 1rem;
 
 
     }
 
   .footer-para {
-      font-size: 13px;
+      font-size: 12px;
     
+}
+ .footer-icon {
+    padding: 0;
+    margin: 5px;
+    border: 1px solid black;
+    
+
 }
 
 }
