@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NavBar Section -->
+    <nav class="nav-container">
+        <div>
+            <img src="assets/lakshmilogo1.png" alt="logo" class="logo-img">
+        </div>
+
+        <div class="nav-links">
+            <ul class="nav-links-list">
+                <li><a href="#aboutme"> About me</a></li>
+                <li><a href="#skills"> Skills</a></li>
+                <li><a href="#projects"> Projects</a></li>
+                <li><a href="#contactme"> Contact me</a></li>
+
+            </ul>
+        </div>
+
+        <div class="resume-btn-container">
+            <button class="resume-btn" onclick="window.open('assets/LakshmiResume .pdf')">Resume
+                <img src="assets/icons8-download-symbol.gif" alt="download-icon" class="download-icon">
+            </button>
+
+        </div>
+        <div class="hamburger-container">
+            <div class="hamburger-menu" onclick="toggleMenu()" id="hamburger-icon">
+                <img src="assets/images-skils/hamburgericon.png" alt="hamburger-icon" class="hamburger-icon">
+            </div>
+            <div class="hamburger-links" id="hamburger-list">
+                <ul class="hamburger-links-list">
+                    <li><a href="#aboutme" onclick="toggleMenu()"> About me</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()"> Skills</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()"> Projects</a></li>
+                    <li><a href="#contactme" onclick="toggleMenu()"> Contact me</a></li>
+
+                </ul>
+
+                <div class="resume-btn-container">
+                    <button class="resume-btn">Resume
+                        <img src="assets/icons8-download-symbol.gif" alt="download-icon" class="download-icon">
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <div class="hero-text-container">
+            <h1 class="hero-section-heading"> Hello I'm
+                <span class="span-bold">Lakshmidevi.</span><br>
+                <span class="span-bold">Fullstack</span>
+                <span class="span-text">Developer</span><br>
+                Based in <span class="span-bold">Nederland.
+                </span>
+            </h1>
+            <p class="hero-section-para">I'm a Full Stack Developer based in Nederland.
+                I am passionate about building scalable and efficient web applications. I enjoy working on
+                innovative projects and collaborating with like-minded developers.</p>
+
+            <div class="social-links">
+                <a href="https://linkedin.com/in/lakshmidevikanala" alt="opps" target="_blank" arial-label=" LinkedIn">
+                    <div class="social-icon">
+                        <img src="assets/linkedin.jpeg" alt="LinkedIn" />
+                    </div>
+                </a>
+                <a href="https://github.com/devi-lakshmi" alt="opps" target="_blank" arial-label="GitHub">
+                    <div class="social-icon">
+                        <img src="assets/github.png" alt="github" />
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/20-1-removebg-preview.png" alt="profile-image" class="profile-image" />
+
+        </div>
+
+        <!-- About me Section -->
+    </section>
+    <section class="aboutme-container" id="aboutme">
+        <div class="aboutme-card-container">
+            <div class="aboutme-img-card">
+                <img src="assets/profile_image_1_-removebg-preview.png" alt="aboutme" class="aboutme-image">
+            </div>
+            <div class="aboutme-text-card">
+                <h2 class="aboutme-heading">About<span class="span-bold"> Me</span></h2>
+                <div class="aboutme-para-container">
+                    <p class="aboutme-para">I'm a Full Stack Developer based in Nederland.
+                        I am passionate about building scalable and efficient web applications. I enjoy working on
+                        innovative projects and collaborating with like-minded developers.I'm a Full Stack Developer
+                        based in Nederland.
+                    </p>
+                    <p class="aboutme-para">I'm a Full Stack Developer based in Nederland.
+                        I am passionate about building scalable and efficient web applications. I enjoy working on
+                        innovative projects and collaborating with like-minded developers.</p>
+                    <p class="aboutme-para">I'm a Full Stack Developer based in Nederland.
+                        I am passionate about building scalable and efficient web applications. I enjoy working on
+                        innovative projects and collaborating with like-minded developers </p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+    <!-- MySKills Section -->
+    <section class="myskills-conatiner" id="skills">
+        <h2 class="section-heading">My <span class="span-bold"> Skills</span></h2>
+        <div class="skills-container">
+            <div class="skils-img-container">
+                <div>
+                    <img src="assets/images-skils/html-1.svg" alt="html" class="skills-image">
+                    <p> HTML</p>
+                </div>
+                <div>
+                    <img src="assets/images-skils/css-3.svg" alt="css" class="skills-image">
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <img src="assets/images-skils/bootstrap-4.svg" alt="bootstrap" class="skills-image">
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <img src="assets/images-skils/tailwind-css-2.svg" alt="tailwind" class="skills-image">
+                    <p>tailwindCSS</p>
+                </div>
+                <div>
+                    <img src="assets/images-skils/javascript-1.svg" alt="javascript" class="skills-image">
+                    <p>Javascript</p>
+                </div>
+                <div>
+                    <img src="assets/images-skils/react-1.svg" alt="react" class="skills-image">
+                    <p>Reactjs</p>
+                </div>
+            </div>
+            <div class="skils-img-container">
+
+                <div>
+                    <img src="assets/images-skils/nodejs-icon.svg" alt="nodejs" class="skills-image">
+                    <p>Nodejs</p>
+                </div>
+
+                <div>
+                    <img src="assets/images-skils/python-5.svg" alt="python-5" class="skills-image">
+                    <p>Python</p>
+                </div>
+                <div>
+                    <img src="assets/images-skils/postgresql.svg" alt="postgresql" class="skills-image">
+                    <p>Postgresql</p>
+                </div>
+                <div>
+                    <img src="assets/images-skils/fastapi.svg" alt="fastapi" class="skills-image">
+                    <p>Fastapi</p>
+                </div>
+                <div>
+                    <img src="assets/images-skils/docker-4.svg" alt="docker" class="skills-image">
+                    <p>Docker</p>
+                </div>
+                <div>
+                    <img src="assets/images-skils/github-icon-1.svg" alt="git" class="skills-image">
+                    <p>Git</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Projects Section -->
+    <section class="Project-container" id="projects">
+        <h2 class="project-main-heading">My <span class="span-bold"> Projects</span></h2>
+
+        <div class="project-card">
+            <div class="project-card-img">
+                <img src="assets/project1.png" alt="project1" class="project-image">
+
+            </div>
+            <div class="project-card-list">
+                <h2 class="project-heading">01</h2>
+                <h3 class="project-heading">GlowGuide</h3>
+                <p class="project-para">
+                    ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                </p><a href="https://github.com/devi-lakshmi/jobby-app.git" alt="project1_github" target="_blank">
+                    <button class="project-btn">github</button>
+                </a>
+                <a href="https://glowcolorguide.netlify.app/" alt="project1" target="_blank">
+                    <button class="project-btn">live</button>
+                </a>
+            </div>
+
+        </div>
+        </div>
+        <div class="project-card right-side">
+
+            <div class="project-card-list">
+                <h2 class="project-heading">02</h2>
+                <h3 class="project-heading">Jobby app</h3>
+                <p class="project-para">ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor</p>
+                <a href="https://github.com/devi-lakshmi/jobby-app.git" alt="project1_github" target="_blank">
+                    <button class="project-btn">github</button>
+                </a>
+                <a href="https://jobby-site.netlify.app" alt="project1" target="_blank">
+                    <button class="project-btn">live</button>
+                </a>
+            </div>
+            <div class="project-card-img ">
+                <img src="assets/project2.png" alt="project2" class="project-image">
+
+            </div>
+        </div>
+        <div class="project-card ">
+            <div class="project-card-img">
+                <img src="assets/project3.png" alt="project3" class="project-image">
+
+            </div>
+            <div class="project-card-list">
+                <h2 class="project-heading">03</h2>
+                <h3 class="project-heading">Foodmunch</h3>
+                <p class="project-para">ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor</p>
+                <a href="https://github.com/devi-lakshmi/FoodMunchApp.git" alt="project1_github" target="_blank">
+                    <button class="project-btn">github</button>
+                </a>
+                <a href="https://foodmunchapp.netlify.app" alt="project1" target="_blank">
+                    <button class="project-btn">live</button>
+                </a>
+            </div>
+        </div>
+        <div class="project-card right-side">
+            <div class="project-card-list">
+                <h2 class="project-heading">04</h2>
+                <h3 class="project-heading">Tourism app</h3>
+                <p class="project-para">ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor</p>
+                <a href="https://github.com/devi-lakshmi/Tourism-Website.git" alt="project1_github" target="_blank">
+                    <button class="project-btn">github</button>
+                </a>
+                <a href="https://tourismappin.netlify.app/" alt="project1" target="_blank">
+                    <button class="project-btn">live</button>
+                </a>
+            </div>
+            <div class="project-card-img ">
+                <img src="assets/project4.png" alt="project4" class="project-image">
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact me Section -->
+    <section class="contact-container" id="contactme">
+        <div class="contact-form">
+            <input type="text" class="form-input" placeholder=" Your name" required>
+            <input type="email" class="form-input" placeholder="Email" required>
+            <input type="text" class="form-input" placeholder="Your website (If exists)">
+            <textarea class="message-textarea" placeholder="How can I help?"></textarea>
+
+            <div>
+                <button class="contact-btn">Get In Touch</button>
+            </div>
+        </div>
+        <div class="contact-text">
+            <h2 class="contact-heading">
+                <span class="span-bold">Let's</span>
+                <span class="span-text">talk</span>
+                <span class="span-bold">for </span><br>
+                <span class="span-bold">Somthing special</span>
+            </h2>
+            <p class="contact-para">I seek to push the limits of creativity to create high-engaging, user-friendly, and
+                memorable interactive
+                experiences.
+            </p>
+            <p class="contact-para2"><strong>devi.venki8@gmail.com</strong></p>
+            <p class="contact-para2"><strong>+31 612345678</strong></p>
+
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section class="Footer-caontainer">
+        <div>
+            <p class="footer-para">© 2025 Lakshmidevi Kanala. All rights reserved.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/lakshmidevikanala" alt="opps" target="_blank" arial-label=" LinkedIn">
+                <div class="social-icon footer-icon">
+                    <img src="assets/linkedin.jpeg" alt="LinkedIn" />
+                </div>
+            </a>
+            <a href="https://github.com/devi-lakshmi" alt="opps" target="_blank" arial-label="GitHub">
+                <div class="social-icon footer-icon">
+                    <img src="assets/github.png" alt="github" />
+                </div>
+            </a>
+
+        </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
