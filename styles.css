@@ -645,7 +645,7 @@ li a{
     }
        
    .skils-img-container div {
-      flex:none;
+       flex:none;
         width:102px;
        
       
@@ -704,16 +704,8 @@ li a{
     width:30px;
     height:30px;
 }
-/* .contact-text {
-    width: 100%;
-
-    margin-left: 0;
 
 
-} */
- .social-links{
-    
- }
  .myskills-conatiner{
  margin-top: -56px;
 }
@@ -761,7 +753,7 @@ li a{
 
     }
     .project-btn{
-        padding: 10px 15px;
+        /* padding: 10px 15px; */
         font-size: 1.2rem;
     }
     .profile-image{
