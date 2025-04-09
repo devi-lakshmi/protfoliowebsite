@@ -1,9 +1,21 @@
-document.getElementById("hamburger-icon").addEventListener("click", function () {
 
-    document.getElementById("hamburger-list").classList.toggle("active")
+function toggleMenu() {
+    const menu = document.querySelector('.hamburger-links');
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("active");
+    icon.classList.toggle("active");
+}
 
+
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+    const formObject = {};
+    formData.forEach((value, key) => {
+        formObject[key] = value;
+    });
+    console.log(formObject);
+    alert('Thank you for getting in touch!');
+    this.reset();
 });
-const icon = document.querySelector("hamburger-menu");
-const menu = document.querySelector(".hamburger-links");
-menu.classList.toggle("active");
-icon.classList.toggle("active");

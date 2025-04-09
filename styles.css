@@ -39,22 +39,35 @@ width: 50%;
     font-size: 1.3em;
   
 }
-.hamburger-container{
+.hamburger-menu{
     position: relative;
     display: none;
 }
-.hamburger-menu{
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 24px;
+    cursor: pointer;
+}
+.hamburger-icon span{
   cursor: pointer;
+   width: 100%;
+   height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+
     
 }
-.hamburger-links{
-    display: none;
+/* .hamburger-links{
+    /* display: none;
     flex-direction: column;
     position: absolute;
     top: 90px;
     left:-260px;
     /* right: 0;
-    z-index: 100; */
+    z-index: 100; 
     background-color: white;
     box-shadow: 0px 4px 6px black;
 
@@ -62,19 +75,68 @@ width: 50%;
     text-align:center;
     transition: all 0.3s ease-in-out;
     width: 300px;
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
 
       
      
    
-}
-.hamburger-links-list{
+} */
+ .hamburger-links{
+    display: none;;
+    position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: 200px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+ }
+ .hamburger-links a{
+       display: block;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+        color: black;
+        text-decoration: none;
+        transition: all 0.3 ease-in-out;
+ }
+.hamburger-links li{
     list-style: none;
     padding: 0;
 }
-.hamburger-links-list li{
+/* .hamburger-links li{
     padding: 10px;
     text-align: center;
+} */
+.hamburger-links.active{
+    display: block;
+    max-height: 500px;
+    flex-direction: column;
+}
+
+.hamburger-icon.active span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.active span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
 }
 
 li a{
@@ -339,20 +401,23 @@ li a{
     max-width:90%
 
     }
+
+
 .project-btn{
-  padding: 10px 20px;
-    background-color:whitesmoke;
-    color: black;
-    font-size:1.5rem;
+  /* padding: 10px 20px; */
+   font-size:1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin:10px
+    margin:10px;
+    transform: 
+    
+ 
 }
 .project-btn:hover{
-    background-color: black;
-    color: white;
-    transition: all 0.5s ease-in-out;
+    /* background-color: rgb(226, 197, 197); */
+    transition: all 0.5s  ease-in-out;
+    transform: scale(1.7);
 }
 
 
@@ -468,12 +533,12 @@ li a{
     .nav-links{
         display: none;
     }
-    .hamburger-container{
+    .hamburger-menu{
         display: block;
     }
     .hamburger-icon{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 50px;
     }
     .hamburger-links.active{
         display: flex;
@@ -481,6 +546,12 @@ li a{
     .resume-btn-container{
         display: none;
     }
+        .resume-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
     .hero-container{
         flex-direction: column-reverse;
        
@@ -491,12 +562,13 @@ li a{
 
 .aboutme-card-container {
     flex-direction: column;
-    /* text-align: center; */
+   
 }
+.aboutme-para {
+      max-width: 100%;
+  }
 
- /* .skills-img-container{
-     
-} */
+ 
  .skils-img-container div {
 
     flex:auto;
@@ -542,8 +614,8 @@ li a{
         max-width: 100%;
     }
     .hamburger-icon{
-        width: 80px;
-        height: 90px;
+        width: 60px;
+        height: 40px;
     }
     .logo-img{
         width: 40%;
@@ -621,8 +693,8 @@ li a{
 
 }
  .hamburger-icon {
-     width: 50px;
-     height: 50px;
+    width: 40px;
+    height: 28px;
  }
 
  
@@ -712,7 +784,7 @@ li a{
  .footer-icon {
     padding: 0;
     margin: 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
 
 }
